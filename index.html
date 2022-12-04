@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+<link rel="Stylesheet" href="Style.css">
+
+</head>
+<script>
+    function anvi(num){
+        let result= document.getElementById("result");
+         result.value+=num;
+        console.log(result.value);
+        
+    }
+</script>
+<body>
+    
+
+    <section class="Calculator">
+
+        <form name="">
+            <h4 style="color: white;">Calculator</h4>
+            <input id="result" type="text" class="screen" name="result"><br>
+            
+
+        <div class="button">
+            <table>
+            
+            <!-- <td><input type="button" class="btn btn_white" value="9" onclick="result.value+='9'">9</td> -->
+            
+            <td><input type="button" class="btn btn_white" value="9" onclick= 'anvi("9")'>9</td>
+            <td><input type="button" class="btn btn_white" value="8" onclick='anvi("8")'>8</td>
+            <td><input type="button" class="btn btn_white" value="7" onclick='anvi("7")'>7</td>
+            <td><input type="button" class="btn btn_yellow" value="*" onclick='anvi("*")'>*</td>
+            
+        </tr>
+        <tr>
+            <td><input type="button" class="btn btn_white" value="6" onclick='anvi("6")'>6</td>
+            <td><input type="button" class="btn btn_white" value="5" onclick='anvi("5")'>5</td>
+            <td><input type="button" class="btn btn_white" value="4" onclick='anvi("4")'>4</td>
+            <td><input type="button" class="btn btn_yellow" value="/" onclick='anvi("/")'> / </td>
+            
+        </tr>
+        <tr>
+            <td><input type="button" class="btn btn_white" value="3" onclick='anvi("3")'>3</td>
+            <td><input type="button" class="btn btn_white" value="2" onclick='anvi("2")'>2</td>
+            <td><input type="button" class="btn btn_white" value="1" onclick='anvi("1")'>1</td>
+            <td><input type="button" class="btn btn_yellow" value="-" onclick='anvi("-")'>-</td>
+            
+        </tr>
+           <tr>
+            <td><input type="button" class="btn btn_white" value="0" onclick='anvi("0")'>0</td>
+            <td><input type="button" class="btn btn_white" value="." onclick='anvi(".")'>.</td>
+            <td><input type="button" class="btn btn_green" value="=" onclick="result.value=eval(result.value)">=</td>
+            <td><input type="button" class="btn btn_yellow" value="+" onclick='anvi("+")'>+</td>
+        </tr>
+        <tr>
+            <td> <input type="button" class="btn btn_red" value="c" onclick="result.value=' '">C </td></tr>
+            
+        </table>
+
+        </div>
+    </form>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
